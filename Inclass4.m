@@ -1,3 +1,5 @@
+%AW: Good job. 1/1. See comment below.
+
 %Inclass assignment 4. Due at the start of class on 9/12/17
 
 %1. (a) Write code that makes a file with the words "Random numbers 1" on its
@@ -27,7 +29,8 @@ line1=[]
 line1=fgetl(fid);
 line1split = strsplit(line1, ' ');
 numberarray = cellfun(@str2num, line1split);
-
+%AW: your answer is fine. note there is no need to clear line1 after the first line. It will overwrite automatticaly.
+% you also don't need to store at all. fgetl(fid); line1=fgetl(fid); will also work. 
 
 % 2. Write a function that takes an array as input and returns a logical
 % variable which is true if the sum of the numbers in the array is greater
